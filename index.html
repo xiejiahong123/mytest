@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
+    <style>
+        .container nav a:first-child{color: #4A90E2}
+        .container nav a:first-child:after{
+            content:"";
+            border-bottom: 2px solid #4A90E2;
+            display: block;
+            position: relative;
+            top: -2px;
+            left: 50%;
+            margin-left: -0.4rem;
+            width: 0.8rem;
+        }
+        .wrapper{height: 3.2rem}
+        .banner-img{width: 100%;height: 100%}
+
+        .session1{padding: 0.6rem 0.6rem}
+        .session-title{text-align: center;margin-bottom: 0.6rem;}
+        .session-title p{font-size: 0.3rem}
+        .session-title p:last-child{color: #DADADA}
+        .text{font-size: 0.24rem;color: #666;text-indent: 2em;line-height: 0.4rem}
+        .scene{font-size: 0.52rem;display: flex}
+        .scene img{width: 1.4rem}
+        .scene dl{flex: 1;text-align: center;margin-top: 0.8rem}
+        .scene dt{font-size: 0.26rem;margin-bottom: 0.2rem}
+
+        .session2{background: #F9F9F9;padding: 0.8rem 0.65rem}
+        .professional{display: flex;flex-flow: row wrap;align-content: flex-start;}
+        .professional dl{flex: 0 0 50%;text-align: center;margin:0.4rem 0}
+        .professional dd{font-size: 0.26rem;color: #666}
+        .professional img{width: 2.6rem}
+
+
+        .session3{padding: 0.8rem 0.3rem}
+        .core img{width: 2.6rem}
+        .row{text-align: center;flex-basis: 100%;display:flex;}
+        .row:nth-child(1){justify-content: center;margin-bottom: 40px}
+        .row:nth-child(1) dl{width: 50% }
+        .row:nth-child(2){justify-content: space-between}
+        .row dl{padding: 0 0.2rem}
+        .row dd p:first-child{font-size: 0.3rem;color: #666;margin-bottom: 20px}
+        .row dd p:last-child{font-size: 0.24rem;color: #333}
+
+
+        .session4{padding: 0.8rem 0.3rem;background: #F9F9F9;}
+        .session-list{display: flex;margin-bottom: 0.8rem}
+        .list-left{flex: 3;text-align: center}
+        .list-left img{width: 1.5rem}
+        .list-right{flex: 9;padding-left: 0.2rem}
+        .list-right p{font-size: 0.3rem;color: #333;margin-bottom: 0.2rem;font-weight: 600}
+        .list-right div{font-size: 0.24rem;color: #666}
+        .detail{text-align: center}
+        .detail span{background: #4A90E2;padding: 0.12rem 0.4rem;border-radius: 0.2rem;color: #fff;font-size: 0.3rem}
+
+        .session5{background: #fff;padding: 0.8rem 0.3rem}
+        .img-list{display: flex;flex-flow: row wrap;align-items: flex-start;justify-content: space-around}
+        .img-list img{margin-top: 0.2rem;width: 2rem}
+
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+<header >
+    <p>
+        <img src="img/LOGO.png" alt="">
+        <span>海外工程云计价软件</span>
+    </p>
+</header>
+    <div class="container">
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="introduce.html">产品介绍</a>
+            <a href="customization.html">企业定制</a>
+            <a href="service.html">软件服务</a>
+            <a href="contact.html">联系我们</a>
+        </nav>
+        <div class="wrapper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/banner.jpg" alt="" class="banner-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index-banner.jpg" alt="" class="banner-img">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="session1">
+            <div class="session-title">
+                <p>应用场景</p>
+                <p>Application scene</p>
+            </div>
+            <div class="text">
+                适用于援外成套项目、使馆经参处项目、驻外使馆馆舍项目 以及国际范围内招投标的各类海外建设项目的投标报价和成本核算工作
+            </div>
+            <div class="scene">
+                <dl>
+                    <dt>投标</dt>
+                    <dd><img src="img/offer.png" alt=""></dd>
+                </dl>
+                <dl>
+                    <dt>成本核算</dt>
+                    <dd><img src="img/compute.png" alt=""></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="session2">
+            <div class="session-title">
+                <p>适用专业</p>
+                <p>Application of professional</p>
+            </div>
+            <div class="professional">
+                <dl>
+                    <dt><img src="img/building.png" alt=""></dt>
+                    <dd>房屋建筑</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/role.png" alt=""></dt>
+                    <dd>公路铁路</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/bridge.png" alt=""></dt>
+                    <dd>市政桥梁</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/hydroenergy.png" alt=""></dt>
+                    <dd>水利水电</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/electricity.png" alt=""></dt>
+                    <dd>电力资源</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="session3">
+            <div class="session-title">
+                <p>核心价值</p>
+                <p>Core value</p>
+            </div>
+            <div class="core">
+                <div class="row">
+                    <dl>
+                        <dt><img src="img/major.png" alt=""></dt>
+                        <dd>
+                            <p>专业</p>
+                            <p>专业化的软件产品，为海外建设 工程项目的计价工作量身定制</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="row">
+                    <dl>
+                        <dt><img src="img/efficient.png" alt=""></dt>
+                        <dd>
+                            <p>高效</p>
+                            <p>充分优化工作流程，有效提高 工作效率达70%以上</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="img/practical.png" alt=""></dt>
+                        <dd>
+                            <p>实用</p>
+                            <p>满足各类海外工程的计价需求 可根据企业自身需求定制</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="session4">
+            <div class="session-title">
+                <p>产品功能</p>
+                <p>Product function</p>
+            </div>
+            <div class="session-list">
+                <div class="list-left">
+                    <img src="img/product-1.png" alt="">
+                </div>
+                <div class="list-right">
+                    <p>轻松导入各种样式的清单BOQ</p>
+                    <div>对于不同类型海外项目的清单(BOQ）形式均能有效支持,简单操作即可导入到软件中进行组价</div>
+                </div>
+            </div>
+            <div class="session-list">
+                <div class="list-left">
+                    <img src="img/product-2.png" alt="">
+                </div>
+                <div class="list-right">
+                    <p>符合海外项目需求的机械费计费功能</p>
+                    <div>行间距内容不同于通用的国内计价软件，提供了满足海外项目实际需求的机械费计算功能</div>
+                </div>
+            </div>
+            <div class="session-list">
+                <div class="list-left">
+                    <img src="img/product-3.png" alt="">
+                </div>
+                <div class="list-right">
+                    <p>可自由编辑和设计各种形式的报表</p>
+                    <div>软件内置了各种项目常用的报表模板，用户 还可自行编辑和设计其他形式的报表</div>
+                </div>
+            </div>
+            <div class="session-list">
+                <div class="list-left">
+                    <img src="img/product-4.png" alt="">
+                </div>
+                <div class="list-right">
+                    <p>自定义的物资设备组价过程</p>
+                    <div>可自行编辑物资设备的组价过程模板，用于满足不同类型海外工程实际需求</div>
+                </div>
+            </div>
+            <div class="session-list">
+                <div class="list-left">
+                    <img src="img/product-5.png" alt="">
+                </div>
+                <div class="list-right">
+                    <p>支持多种货币的计算与分析汇总</p>
+                    <div>多币种同时计算，并能分析汇总各币种的组成，国际项目支持“多币种录入，单币种计算，多币种报表”的模式</div>
+                </div>
+            </div>
+            <div class="session-list">
+                <div class="list-left">
+                    <img src="img/product-6.png" alt="">
+                </div>
+                <div class="list-right">
+                    <p>支持对用户的需求进行定制开发</p>
+                    <div>独创的软件底层架构，支持进行企业定制开发，用于满足不同类型海外项目的实际需求</div>
+                </div>
+            </div>
+            <div class="detail">
+                <span>功能详情</span>
+            </div>
+
+        </div>
+        <div class="session5">
+            <div class="session-title">
+                <p>典型用户</p>
+                <p>Typical user</p>
+            </div>
+            <div class="img-list">
+                <img src="img/user-1.png" alt=""><img src="img/user-2.png" alt=""><img src="img/user-3.png" alt=""><img src="img/user-4.png" alt=""><img src="img/user-5.png" alt="">
+                <img src="img/user-6.png" alt=""><img src="img/user-7.png" alt=""><img src="img/user-8.png" alt=""><img src="img/user-9.png" alt=""><img src="img/user-10.png" alt="">
+                <img src="img/user-11.png" alt=""><img src="img/user-12.png" alt=""><img src="img/user-13.png" alt=""><img src="img/user-14.png" alt=""><img src="img/user-15.png" alt="">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="link-our">
+            <span>关于我们</span>
+            <span>联系我们</span>
+            <span>用户协议</span>
+        </div>
+        <div>Copyright © 2016-2017 Hornsun. 北京虹晟信息科技有限公司</div>
+        <div>京ICP备16060575号-1</div>
+    </footer>
+
+
+</body>
+<script src="js/swiper-4.3.3.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        loop : true,
+        autoplay:true,
+    });
+</script>
+
+</html>
